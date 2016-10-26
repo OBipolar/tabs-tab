@@ -1,0 +1,24 @@
+{
+  "name": "Chrome Tabs Tab",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Chrome extension to replace default new tab with current tabs information",
+  "homepage_url": "https://github.com/OBipolar/tabs-tab",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
+  "chrome_url_overrides": {
+    "newtab": "src/override/override.html"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+  ]
+}
